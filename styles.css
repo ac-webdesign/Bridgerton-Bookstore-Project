@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playwrite IT Moderna';
+}
+body{
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+.logodiv{
+    background-color: hsla(197, 30%, 75%, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(3rem);
+}
+
+.hero{
+    background-color: hsla(197, 56%, 67%, 0.1);
+    backdrop-filter: blur(4rem);
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: start;
+    gap: 164px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 64px;
+}
+li{
+    cursor: pointer;
+    color:white;
+
+}
+li:hover{
+    color: #0A3951;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #D4D5D7;
+    padding: 16px 32px;
+    width: 100%;
+    background-color: #ecf4f70e;
+    backdrop-filter: blur(2rem);
+    margin-bottom: 2rem;
+}
+.book-img{
+    height: 400px;
+    width: 240px;
+    border-radius: 16px;
+
+}
+.book-title{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 8px 0 ;
+    color: #eeeeee;
+}
+.book-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 600px;
+    width: 500px;
+    margin-top: 2rem;
+}
+.under-title{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: start;
+    flex-direction: column;
+}
+.author{
+    color: rgb(61, 42, 6);
+
+}
+.rating{
+    font-family: 'poppins';
+}
+.series{
+    font-size: 1.1rem ;
+    color: rgb(63, 63, 63);
+}
+hr{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.description{
+    max-width: 40ch;
+    color: rgb(202, 202, 202);
+    margin-bottom: 1rem;
+    font-family: 'poppins';
+}
+.price{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(230, 230, 230, 0.877);
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 250px;
+}
+.buy-btn{
+    width: 200px;
+    padding: 8px 16px;
+    background-color: #ADC8D3;
+    border-radius: 8px;
+    text-align: center;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 200px;
+}
+.books-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 600px;
+}
+.book1{
+    z-index: 8;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+.book2{
+    z-index: 7;
+    filter: brightness(0.2);
+    height: 380px;
+    position: absolute;
+    right: 100px;
+    top: 70px;
+}
+.book3{
+    z-index: 6;
+    filter: brightness(0.2);
+    height: 360px;
+    position: absolute;
+    right: 140px;
+    top: 80px;
+}
+
+
+.book4{
+    z-index: 5;
+    filter: brightness(0.2);
+    height: 340px;
+    position: absolute;
+    right: 180px;
+    top: 90px;
+}
+.book5{
+    display: none;
+    
+}
+.book6{
+    z-index: 5;
+    filter: brightness(0.2);
+    height: 340px;
+    position: absolute;
+    right: -60px;
+    top: 90px;
+}
+.book7{
+    z-index: 6;
+    filter: brightness(0.2);
+    height: 360px;
+    position: absolute;
+    right: -20px;
+    top: 80px;
+}
+.book8{
+    z-index: 7;
+    filter: brightness(0.2);
+    height: 380px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+.books{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -130px;
+    width: 60%;
+    margin: 0 auto;
+    height: 250px;
+    gap: 16px;
+}
+.book{
+    height: 200px;
+    width: auto;
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.book:hover{
+    opacity: 1;
+}
+/* styles.css */
+#prev-btn {
+    position: absolute;
+    right: 430px;
+    top: 220px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ADC8D3;
+    font-size: 2rem;
+    z-index: 888;
+}
+#next-btn {
+    position: absolute;
+    right: -95px;
+    top: 220px;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color: #ADC8D3;
+    font-size: 2rem;
+    z-index: 9999;
+}
+.buy-btn:hover{
+    background-color: #0A3951;
+    color: white;
+}
+#prev-btn:hover, #next-btn:hover {
+    color:  #0A3951;
+}
+.book1-down{
+    opacity: 1;
+}
+
+
+@media (max-width:600px) {
+    .navbar{
+        display: none;
+    }
+    header{
+        padding: 8px 0 0;
+        margin-bottom: 1rem;
+    }
+    .hero{
+        flex-direction: column;
+        width: 84%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .books-container{
+        width: 360px;
+        margin: 0;
+        margin-top: 6rem;
+    }
+    .book1{
+        z-index: 8;
+        position: absolute;
+        right: 100px;
+        top: 60px;
+        width: 160px;
+        height: auto;
+    }
+    .book2{
+        z-index: 7;
+        filter: brightness(0.2);
+        height: 220px;
+        width: auto;
+        position: absolute;
+        right: 160px;
+        top: 75px;
+    }
+    .book3{
+        z-index: 6;
+        filter: brightness(0.2);
+        height: 200px;
+        width: auto;
+        position: absolute;
+        right: 210px;
+        top: 85px;
+    }
+    
+    
+    .book4{
+        z-index: 5;
+        filter: brightness(0.2);
+        height: 180px;
+        width: auto;
+        position: absolute;
+        right: 250px;
+        top: 90px;
+    }
+    .book5{
+        display: none;
+        
+    }
+    .book6{
+        z-index: 5;
+        filter: brightness(0.2);
+        height: 180px;
+        width: auto;
+        position: absolute;
+        left: 250px;
+        top: 90px;
+    }
+    .book7{
+        z-index: 6;
+        filter: brightness(0.2);
+        height: 200px;
+        width: auto;
+        position: absolute;
+        left: 210px;
+        top: 85px;
+    }
+    .book8{
+        z-index: 7;
+        filter: brightness(0.2);
+        height: 220px;
+        width: auto;
+        position: absolute;
+        left: 160px;
+        top: 75px;
+    }
+    .book-title{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        left: 0;
+        font-size: 1.3rem;
+    }
+    .under-title{
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+    .book-description{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin: 0;
+    }
+    .description{
+        position: absolute;
+        font-size: 0.9rem;
+        font-weight: 300;
+        top: 450px;
+        max-width: 32ch;
+        margin-bottom: 0;
+    }
+    .price{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(230, 230, 230, 0.877);
+        margin-bottom: 8px;
+        position: absolute;
+        bottom: 250px;
+    }
+    .buy-btn{
+        width: 200px;
+        padding: 8px 16px;
+        background-color: #ADC8D3;
+        border-radius: 8px;
+        text-align: center;
+        color: rgb(27, 27, 27);
+        cursor: pointer;
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 200px;
+    }
+    .books{
+        width: 90%;
+        position: relative;
+        overflow-x: scroll;
+    }
+    .buy-btn{
+        bottom: 140px;
+    }
+    .price{
+        display: none;
+    }
+    hr{
+        position: absolute;
+        bottom: 210px;
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        width: 80%;
+    }
+    #next-btn{
+        width: 50px;
+        position: absolute;
+        left: 270px;
+        top: 140px;
+        z-index: 10;
+    }
+    #prev-btn{
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        z-index: 11;
+    }
+    .author{
+        color: #fdd11f;
+        order: 1;
+    }
+    .series{
+        order: 2;
+    }
+    .rating{
+        order: 3;
+    }
+    .disclaimer{
+        position: relative;
+        bottom: 80px;
+        text-align: center;
+        max-width: 25ch;
+        color: rgba(255, 255, 255, 0.466);
+    }
+}
