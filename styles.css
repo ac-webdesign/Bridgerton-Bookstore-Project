@@ -47,21 +47,22 @@ body{
 }
 li{
     cursor: pointer;
-    color:white;
+    color:#0B4B64;
+    font-size: 1rem;
+    font-weight: 600;
 
 }
 li:hover{
-    color: #0A3951;
+    color: #00080c;
 }
 header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #D4D5D7;
     padding: 16px 32px;
     width: 100%;
-    background-color: #ecf4f70e;
-    backdrop-filter: blur(2rem);
+    background-color: #ecf4f765;
+    backdrop-filter: blur(0.2rem);
     margin-bottom: 2rem;
 }
 .book-img{
@@ -203,9 +204,9 @@ hr{
 .books{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
-    top: -130px;
+    top: -180px;
     width: 60%;
     margin: 0 auto;
     height: 250px;
@@ -256,8 +257,22 @@ hr{
     opacity: 1;
 }
 
-
-@media (max-width:600px) {
+.disclaimer{
+    position: relative;
+    bottom: 80px;
+    text-align: center;
+    max-width: 50ch;
+    color: rgba(255, 255, 255, 0.466);
+}
+@media (max-width:1500px) {
+    .hero{
+        width: 85%;
+    }
+    .description{
+        max-width: 35ch;
+    }
+}
+@media (max-width:1200px) {
     .navbar{
         display: none;
     }
@@ -400,6 +415,9 @@ hr{
         width: 90%;
         position: relative;
         overflow-x: scroll;
+        justify-content: space-around;
+        top: -140px;
+
     }
     .buy-btn{
         bottom: 140px;
@@ -437,10 +455,7 @@ hr{
         order: 3;
     }
     .disclaimer{
-        position: relative;
-        bottom: 80px;
-        text-align: center;
         max-width: 25ch;
-        color: rgba(255, 255, 255, 0.466);
+
     }
 }
